@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import tweets from 'tweets'
+import tweets from 'tweets';
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        tweets
+        <Tweet>
+		  <User/>
+			<Entities>
+			<UrlEntity/>
+			</Entities>
+		</Tweet>
       </div>
     );
   }
@@ -15,6 +20,6 @@ class App extends React.Component {
 
 const element = document.getElementById('app');
 
-ReactDOM.render(<App />, element );//
+ReactDOM.render(<App />, element );
 
-console.log("tweet react");
+console.log("index react");
