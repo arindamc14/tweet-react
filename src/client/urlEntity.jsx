@@ -7,6 +7,7 @@ class UrlEntity extends React.Component {
   render() {
     return (
       <div>
+      UrlEntity works
       {this.props.tweets.entities.url}
       </div>
     );
